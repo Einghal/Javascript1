@@ -7,7 +7,7 @@ box-sizing: border-box;
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f );
+    background: linear-gradient(135deg, #dc16ae, #03d044 );
     padding: 10px;
 }
 .todo-app{
@@ -48,7 +48,7 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #1809eb;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -70,7 +70,7 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(images/uncheckmark.jpg);
+    background-image: url(images/emptyDot.png);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -83,4 +83,19 @@ ul li.checked{
 }
 ul li.checked::before{
 background-image: url(images/checkmark.jpg)
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height:  40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center; 
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
 }
